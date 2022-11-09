@@ -1,0 +1,38 @@
+.h{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color:#52529d;
+    padding-top: 4%;
+    padding-left: 2%;
+    font-size: auto;
+    text-align: center;
+}
+#p{
+    text-align: center;
+    font-size: xxx-large;
+    padding-top: 16%;
+    text-decoration: double;
+}
+#p2{
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+}
+#btn{
+    
+    color:#ffffff;
+    background-color: #20179d;
+    font-size: larger;
+    border-radius: 2px;
+    
+    text-align: center;
+}
+
+button{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}

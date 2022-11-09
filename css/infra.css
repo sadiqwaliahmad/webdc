@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=VT323&display=swap');
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
+  }
+  
+  .scroll-to-top{
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px; 
+    font-size: 30px;
+    color: #fff;
+    background: #6b34b4;
+  }
+
+body{
+    background: white;
+    background-size: cover;
+    font-family: 'Poppins',sans-serif;
+    transition: all .5s ease-in;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    width: 50%;
+    
+    padding-bottom: 50px;
+    
+}
+
+.container .heading h3{
+   
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+    font-weight: 500;
+}
+
+
+
+
+
+.table__contents table{
+    background-color: rgb(255, 255, 255); 
+    max-width: 100%;
+    height: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.table__contents thead{
+   
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+th{
+    background: rgb(255, 255, 255);
+    
+}
+.table__contents tr{
+    background-color: #e9e6e6;
+    border: 1px solid black;
+    padding: 0.35rem;
+    text-align: center;
+    
+}
+.table__contents td{
+    text-align: center;
+    
+    padding: 20px;
+    
+}
+
+
+.table__contents tr{
+    display: table-row;
+}
+
+
+
+@media only screen and (max-width:800px){
+    #table-responsive tbody, 
+    #table-responsive tr, 
+    #table-responsive td{
+        display: block;
+    }
+    #table-responsive thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #table-responsive td{
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #eee;
+        word-break: break-all;
+        line-break: strict;
+    }
+    #table-responsive td:before{
+        content: attr(data-title);
+        position: absolute;
+        left: 2px;
+        font-weight: bold;
+        
+    }
+    #table-responsive tr{
+        border-bottom: 1px solid #ccc;
+        word-break: break-all;
+    }
+
+}
+
+
+@media only screen and (max-width: 769px){
+    .container{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .heading{
+        word-break: break-all;
+        object-fit: cover;
+        background-size: contain;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+@media only screen and (max-width: 269px){
+    .container{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .heading{
+        font-size: 10px;
+        object-fit: cover;
+        background-size: contain;
+        width: 100%;
+        word-break: break-all;
+        justify-content: center;
+    }
+    td {
+        font-size: 12px;
+    }
+}
+
+
